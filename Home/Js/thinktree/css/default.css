@@ -1,0 +1,134 @@
+
+/* 默认样式 */
+
+
+.thinktree-default{
+    margin: 6px;
+    unselectable: on; /* ie */
+            user-select: none;
+       -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.thinktree-default i,
+.thinktree-default a,
+.thinktree-default span{
+    height: 24px;
+    line-height: 24px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.thinktree-default i{
+    width: 20px;
+    background-image: url(images/tree.png);
+    display: inline-block;
+}
+.thinktree-default a,
+.thinktree-default span{
+    color: #444;
+    padding: 0 2px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+.thinktree-default div{
+    height: 24px;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
+    white-space: nowrap;
+}
+
+/* child */
+.thinktree-default li > ul{
+    padding-left: 20px;
+}
+.thinktree-default li.closed > ul{
+    display: none;
+}
+
+.thinktree-default li .tree-icon-item{
+    background-position: -60px -17px;
+}
+.thinktree-default li.closed > div .tree-icon-item{
+    background-position: -80px -17px;
+}
+
+.thinktree-default li > div:only-child .tree-icon-item{
+    background-position: -100px -17px;
+}
+
+.thinktree-search li a,
+.thinktree-search li span{
+    color: #CCC;
+}
+.thinktree-search li.searched > div a,
+.thinktree-search li.searched > div span{
+    color: #0382AD;
+    font-weight: bold;
+}
+
+.thinktree-default li.active > div a,
+.thinktree-default li.active > div span{
+    color: #FFF;
+    background-color: #08C;
+}
+
+/* 不带连接线样式 */
+.thinktree-default li .tree-icon-switch{
+    background-position: -80px -60px;
+}
+.thinktree-default li.closed > div .tree-icon-switch{
+    background-position: -60px -60px;
+}
+
+/* 带连接线样式 */
+.thinktree-default .thinktree-showline li > ul{
+    background: url(images/tree-line.png) repeat-y 0 0 transparent;
+}
+.thinktree-default .thinktree-showline li:last-child > ul{
+    background: none;
+}
+
+
+/* item icon */
+.thinktree-default .thinktree-showline li .tree-icon-switch{
+    background-position: -40px -17px;
+}
+.thinktree-default .thinktree-showline li.closed > div .tree-icon-switch{
+    background-position: -20px -17px;
+}
+
+/* first child */
+.thinktree-default .thinktree-showline > li:first-child > div .tree-icon-switch{
+    background-position: -40px 3px;
+}
+.thinktree-default .thinktree-showline > li.closed:first-child > div .tree-icon-switch{
+    background-position: -20px 3px;
+}
+
+/* last child */
+.thinktree-default .thinktree-showline li:last-child > div .tree-icon-switch{
+    background-position: -40px -37px;
+}
+.thinktree-default .thinktree-showline li.closed:last-child > div .tree-icon-switch{
+    background-position: -20px -37px;
+}
+
+/* only child */
+.thinktree-default .thinktree-showline > li:only-child > div .tree-icon-switch{
+    background-position: -40px -60px;
+}
+.thinktree-default .thinktree-showline > li.closed:only-child > div .tree-icon-switch{
+    background-position: -20px -60px; 
+}
+
+/* not child */
+.thinktree-default .thinktree-showline > li:first-child > div:only-child .tree-icon-switch{
+    background-position: 0 0;
+}
+.thinktree-default .thinktree-showline li > div:only-child .tree-icon-switch{
+    background-position: 0 -17px;
+}
+.thinktree-default .thinktree-showline li:last-child > div:only-child .tree-icon-switch{
+    background-position: 0 -37px;
+}
+
